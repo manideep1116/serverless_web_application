@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html >
+
+	<head>
+
+		<title>Welcome to Ocelot Consulting!</title>
+
+	</head>
+
+  <body background="https://elevateservices.com/wp-content/uploads/AdobeStock_208568531.jpeg" bgcolor="#561109"; style='color: #ccccff'>
+    <center >
+      <div class="caption">
+        <h1 >Welcome to Ocelot Consulting!</h1>
+      </div>
+    <br>
+      <div class="about">
+         <h4>Are you excited to join us?</h4>
+        <h4>Please choose from below to know more about the open positions!</h4>
+      </div>
+      </center>
+
+    
+      <div class="first">
+        <h2><u>Full Stack Developer</u></h2>
+        <p>For developers who are comfortable building an app from UI to API, and Database to Cloud provisioning.</p>
+        <button class="button" id="fsd"> Know more!</button>
+        <p id ="output"> </p>
+      </div>
+    
+
+  <div class="second">
+        <h2><u>Big Data Engineer</u></h2>
+        <p>For developers who are comfortable processing terabytes of data. You know your Kafka from your Spark.</p>
+        <button class="button" id="bde">know more!</button>
+        <p id = "result"></p>
+      </div>
+
+      <div class="third">
+        <h2><u>Cloud Engineerr</u></h2>
+        <p>For developers who are comfortable enabling and expanding Cloud adoption and proficiency via automation and best practices.</p>
+        <button class= "button" id="ce">know more!</button>
+        <p id= "data"></p>
+      </div>
+
+  <div style="position: absolute; bottom: 5px">
+      Designed by Manideep Reddy Gillela and Yashjeet Singh &#128522;
+    </div>
+
+
+ <script>
+    document.getElementById('fsd').addEventListener('click', fsd);
+    document.getElementById('bde').addEventListener('click', bde);
+    document.getElementById('ce').addEventListener('click', ce);
+
+    
+
+
+    function fsd(){
+      fetch('http://127.0.0.1:5000/fullstack')
+        .then(function(res){
+          return res.text();
+        })
+      .then(function(text){
+        console.log(text);
+        document.getElementById('output').innerHTML = text;
+      })
+    }   
+
+   function bde(){
+      fetch('http://127.0.0.1:5000/bigdata')
+        .then(function(res){
+          return res.text();
+        })
+      .then(function(text){
+        console.log(text);
+        document.getElementById('result').innerHTML = text;
+      })
+    }   
+
+   function ce(){
+      fetch('http://127.0.0.1:5000/cloudeng')
+        .then(function(res){
+          return res.text();
+        })
+      .then(function(text){
+        console.log(text);
+        document.getElementById('data').innerHTML = text;
+      })
+    }   
+
+       
+ </script>
+  </body>
+</html>
