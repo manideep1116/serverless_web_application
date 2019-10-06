@@ -1,0 +1,28 @@
+{
+    "LoadBalancers": [
+        {
+            "IpAddressType": "ipv4", 
+            "VpcId": "vpc-0a1c54a56905978f9", 
+            "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:214964586521:loadbalancer/net/serverless-nlb/385f3e6347d1e2cc", 
+            "State": {
+                "Code": "provisioning"
+            }, 
+            "DNSName": "serverless-nlb-385f3e6347d1e2cc.elb.us-east-1.amazonaws.com", 
+            "LoadBalancerName": "serverless-nlb", 
+            "CreatedTime": "2019-10-02T18:26:48.616Z", 
+            "Scheme": "internet-facing", 
+            "Type": "network", 
+            "CanonicalHostedZoneId": "Z26RNL4JYFTOTI", 
+            "AvailabilityZones": [
+                {
+                    "SubnetId": "subnet-005098ec69478ad79", 
+                    "ZoneName": "us-east-1b"
+                }, 
+                {
+                    "SubnetId": "subnet-00ba0c2124deee19c", 
+                    "ZoneName": "us-east-1a"
+                }
+            ]
+        }
+    ]
+}

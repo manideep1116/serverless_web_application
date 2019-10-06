@@ -1,0 +1,32 @@
+{
+  "family": "serverless-webapp",
+  "cpu": "256",
+  "memory": "512",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "executionRoleArn": "arn:aws:iam::214964586521:role/serverlessCoreStack-EcsServiceRole-AYPTKR1QXUZ0",
+  "taskRoleArn": "arn:aws:iam::214964586521:role/serverlessCoreStack-ECSTaskRole-1QZCJ8NUCJ131",
+  "containerDefinitions": [
+    {
+      "name": "serverlesswebapp-Service",
+      "image": "214964586521.dkr.ecr.us-east-1.amazonaws.com/serverlesswebapp/service:latest",
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "protocol": "http"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "serverlesswebapp-logs",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "awslogs-serverlesswebapp-service"
+        }
+      },
+      "essential": true
+    }
+  ]
+}

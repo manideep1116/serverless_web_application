@@ -5,7 +5,7 @@
             "Action": "s3:GetObject",
             "Effect": "Allow",
             "Principal": "*",
-            "Resource": "arn:aws:s3:::samplewebsitebuc/*",
+            "Resource": "arn:aws:s3:::serverless00/*",
             "Sid": "PublicReadForGetBucketObjects"
         }
     ],

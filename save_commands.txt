@@ -1,0 +1,1000 @@
+ 1033  ls
+ 1034  cd ..
+ 1035  vim hw1.txt 
+ 1036  cd ec2-backup_hw2/
+ 1037  ls
+ 1038  vim ec2-backup.sh 
+ 1039  ls
+ 1040  vim ec2-backup_hw2.py 
+ 1041  ps -aux | grep java | grep sdkms 
+ 1042  ps -aux | grep java | grep sdkms | awk '{print $2}'
+ 1043  ps -aux | grep java 
+ 1044  ps -aux | grep sdkms | awk '{print $2}'
+ 1045  ps -aux | grep sdkms | grep java| awk '{print $2}'
+ 1046  python3
+ 1047  #!/bin/bash
+ 1048  Hosts = "host1 host2 host3 host4 host5 host6 host7 host8 host9 host10"
+ 1049  for HostName in ${hosts}; do        echo $HostName
+ 1050         ssh -o StrictHostKeyChecking=no -l username hostname << EOF
+ 1051         ssh -i "Key_pair.pem" ubuntu@ec2-184-72-120-97.compute-1.amazonaws.com << bash EOF
+ 1052         x="$(ps -ef | grep -i java | grep sdkms| grep -v grep | awk '{print $2}')"
+ 1053         if [$x -ne 0]; then
+ 1054                  echo "PID = $x"
+ 1055          else
+ 1056                  end=$((SECONDS+10)
+ 1057                  while [ $SECONDS -lt $end ]; do
+ 1058                          eval "$x"
+ 1059                          if [$x -ne 0]; then
+ 1060                                  echo "PID = $x"
+ 1061                                  break
+ 1062                          fi
+ 1063                   done
+ 1064          fi
+ 1065  EOF
+ 1066  cd Github_Rep/CS-615-Aspects-of-SystemAdministration/
+ 1067  ls
+ 1068  cd ec2-backup_hw2/
+ 1069  ls
+ 1070  vim ec2-backup.sh 
+ 1071  ssh -o StrictHostKeyChecking=no ubuntu@ec2-184-72-120-97.compute-1.amazonaws.com
+ 1072  cd tasks/
+ 1073  chmod 400 Key_pair.pem 
+ 1074  cd tasks/
+ 1075  vim devops_solution_Manideep_Gillela.py 
+ 1076  mv devops_solution_Manideep_Gillela.py devops_solution_Manideep_Gillela.sh
+ 1077  vim devops_solution_Manideep_Gillela.sh 
+ 1078  bash
+ 1079  /bin.bash
+ 1080  /bin/bash
+ 1081  test.sh
+ 1082  vim test.sh
+ 1083  chmod 777 test.sh 
+ 1084  ./test.sh 
+ 1085  vim test.sh
+ 1086  ./test.sh 
+ 1087  vim test.sh
+ 1088  ./test.sh 
+ 1089  vim test.sh
+ 1090  vim devops_solution_Manideep_Gillela.sh 
+ 1091  vim test.sh 
+ 1092  ./test.sh 
+ 1093  vim test.sh 
+ 1094  vim devops_solution_Manideep_Gillela.sh 
+ 1095  vim test.sh 
+ 1096  ./test.sh 
+ 1097  vim test.sh 
+ 1098  ./test.sh 
+ 1099  vim test.sh 
+ 1100  ./test.sh 
+ 1101  vim test.sh 
+ 1102  ./test.sh 
+ 1103  vim test.sh 
+ 1104  ./test.sh 
+ 1105  vim test.sh 
+ 1106  vim devops_solution_Manideep_Gillela.sh 
+ 1107  cd
+ 1108  ps -o pid -C java | sdkms
+ 1109  ps -o pid -C java | grep sdkms
+ 1110  ps -aux | grep java
+ 1111  ps -o pid -C| grep java | grep sdkms
+ 1112  man ps
+ 1113  ps -opc | grep java | grep sdkms
+ 1114  ps -op | grep java | grep sdkms
+ 1115  ps -p | grep java | grep sdkms
+ 1116  ps -pid | grep java | grep sdkms
+ 1117  ps --help
+ 1118  man ps
+ 1119  man pidof
+ 1120  piod java | grep sdkms
+ 1121  pidof java | grep sdkms
+ 1122  pidof java
+ 1123  pidof
+ 1124  man pidof
+ 1125  pidof -c java
+ 1126  pidof -c Java
+ 1127  pidof -c java
+ 1128  pidof -c java 
+ 1129  pidof -c java  | grep sdkms
+ 1130  ps -aux | grep java
+ 1131  man ps
+ 1132  ps -auxp | grep java
+ 1133  ps -p | grep java
+ 1134  man ps
+ 1135  ps -ef | grep KEYWORD | grep -v grep | awk '{print $2}'
+ 1136  ps -ef | grep java | grep -v grep | awk '{print $2}'
+ 1137  ps -ef | grep java | grep sdkms| grep -v grep | awk '{print $2}'
+ 1138  ps -auxwww | grep java | grep sdkms| grep -v grep | awk '{print $2}'
+ 1139  perl -MPOSIX -e '$0="Java sdkms"; pause' &
+ 1140  perl -MPOSIX -e '$0="Java/bin sdkms"; pause' &
+ 1141  ps -auxwww | grep java | grep sdkms| grep -v grep | awk '{print $2}'
+ 1142  ps -ef | grep java | grep sdkms| grep -v grep | awk '{print $2}'
+ 1143  ps -ef | grep j[J]ava | grep sdkms| grep -v grep | awk '{print $2}'
+ 1144  ps -ef | grep [j]ava | grep sdkms| grep -v grep | awk '{print $2}'
+ 1145  ps -ef | grep [J]ava | grep sdkms| grep -v grep | awk '{print $2}'
+ 1146  ps -ef | grep [j]ava | grep sdkms| grep -v grep | awk '{print $2}'
+ 1147  ps -eaf | grep java | grep sdkms| grep -v grep | awk '{print $2}'
+ 1148  ps -eaf | grep -i java | grep sdkms| grep -v grep | awk '{print $2}'
+ 1149  man bash
+ 1150  cd  tasks/
+ 1151  vim test.sh 
+ 1152  ./test.sh 
+ 1153  vim test.sh 
+ 1154  ./test.sh 
+ 1155  vim test.sh 
+ 1156  ./test.sh 
+ 1157  vim test.sh 
+ 1158  vim devops_solution_Manideep_Gillela.sh 
+ 1159  vim test.sh 
+ 1160  ./test.sh 
+ 1161  vim devops_solution_Manideep_Gillela.sh 
+ 1162  vim test.sh 
+ 1163  ./test.sh 
+ 1164  vim test.sh 
+ 1165  ./test.sh 
+ 1166  vim test.sh 
+ 1167  ./test.sh 
+ 1168  vim test.sh 
+ 1169  ./test.sh 
+ 1170  vim test.sh 
+ 1171  ./test.sh 
+ 1172  vim test.sh 
+ 1173  ./test.sh 
+ 1174  vim test.sh 
+ 1175  ./test.sh 
+ 1176  vim test.sh 
+ 1177  x="ls | wc"
+ 1178  eval "$x"
+ 1179  y=$(eval "$x")
+ 1180  ps -eaf | grep -i java | grep sdkms| grep -v grep | awk '{print $2}'
+ 1181  vim tet
+ 1182  vim test.sh 
+ 1183  vim tet
+ 1184  ./test.sh 
+ 1185  vim new.py
+ 1186  ls
+ 1187  python3 new.py 
+ 1188  vim new.py
+ 1189  python3 new.py 
+ 1190  vim new.py
+ 1191  python3 new.py 
+ 1192  vim new.py
+ 1193  python3 new.py 
+ 1194  vim new.py
+ 1195  python3 new.py 
+ 1196  vim new.py
+ 1197  python3 new.py 
+ 1198  vim new.py
+ 1199  python3 new.py 
+ 1200  vim new.py
+ 1201  python3 new.py 
+ 1202  vim new.py
+ 1203  python3 new.py 
+ 1204  vim new.py
+ 1205  python3 new.py 
+ 1206  vim new.py
+ 1207  cd Github_Rep/
+ 1208  ls
+ 1209  cd CS-615-Aspects-of-SystemAdministration/
+ 1210  ls
+ 1211  cd ec2-backup_hw2/
+ 1212  vik ec2-backup_hw2.py 
+ 1213  vim ec2-backup_hw2.py 
+ 1214  pgrep -f1 java
+ 1215  pgrep -fl java
+ 1216  cd tasks/
+ 1217  vim devops_solution_Manideep_Gillela.sh 
+ 1218  chmod 777 devops_solution_Manideep_Gillela.sh 
+ 1219  ./devops_solution_Manideep_Gillela.sh 
+ 1220  vim devops_solution_Manideep_Gillela.sh 
+ 1221  ./devops_solution_Manideep_Gillela.sh 
+ 1222  vim devops_solution_Manideep_Gillela.sh 
+ 1223  ./devops_solution_Manideep_Gillela.sh 
+ 1224  vim devops_solution_Manideep_Gillela.sh 
+ 1225  ./devops_solution_Manideep_Gillela.sh 
+ 1226  vim devops_solution_Manideep_Gillela.sh 
+ 1227  ./devops_solution_Manideep_Gillela.sh  
+ 1228  vim devops_solution_Manideep_Gillela.sh 
+ 1229  ./devops_solution_Manideep_Gillela.sh  
+ 1230  vim devops_solution_Manideep_Gillela.sh 
+ 1231  ./devops_solution_Manideep_Gillela.sh  
+ 1232  vim devops_solution_Manideep_Gillela.sh 
+ 1233  ./devops_solution_Manideep_Gillela.sh  
+ 1234  vim devops_solution_Manideep_Gillela.sh 
+ 1235  ./devops_solution_Manideep_Gillela.sh  
+ 1236  vim devops_solution_Manideep_Gillela.sh 
+ 1237  ./devops_solution_Manideep_Gillela.sh  
+ 1238  vim devops_solution_Manideep_Gillela.sh 
+ 1239  ./devops_solution_Manideep_Gillela.sh  
+ 1240  vim devops_solution_Manideep_Gillela.sh 
+ 1241  ./devops_solution_Manideep_Gillela.sh  
+ 1242  vim devops_solution_Manideep_Gillela.sh 
+ 1243  ./devops_solution_Manideep_Gillela.sh  
+ 1244  vim devops_solution_Manideep_Gillela.sh 
+ 1245  ./devops_solution_Manideep_Gillela.sh  
+ 1246  vim devops_solution_Manideep_Gillela.sh 
+ 1247  ./devops_solution_Manideep_Gillela.sh  
+ 1248  vim devops_solution_Manideep_Gillela.sh 
+ 1249  ./devops_solution_Manideep_Gillela.sh  
+ 1250  vim devops_solution_Manideep_Gillela.sh 
+ 1251  bash -i devops_solution_Manideep_Gillela.sh 
+ 1252  man bash
+ 1253  vim devops_solution_Manideep_Gillela.sh 
+ 1254  man bash
+ 1255  vim devops_solution_Manideep_Gillela.sh 
+ 1256  ./devops_solution_Manideep_Gillela.sh 
+ 1257  vim devops_solution_Manideep_Gillela.sh 
+ 1258  ./devops_solution_Manideep_Gillela.sh 
+ 1259  ssh -i "Key_pair.pem" ubuntu@ec2-184-72-120-97.compute-1.amazonaws.com
+ 1260  cd tasks/
+ 1261  ssh -i "Key_pair.pem" ubuntu@ec2-184-72-120-97.compute-1.amazonaws.com
+ 1262  cd tasks/
+ 1263  vim devops_solution_Manideep_Gillela.sh 
+ 1264  ./devops_solution_Manideep_Gillela.sh 
+ 1265  vim devops_solution_Manideep_Gillela.sh 
+ 1266  ./devops_solution_Manideep_Gillela.sh 
+ 1267  ls -l
+ 1268  ./devops_solution_Manideep_Gillela.sh 
+ 1269  perl -MPOSIX -e '$0="java/bin.software sdkms"; pause' &
+ 1270  perl -MPOSIX -e '$0="Java/bin.software sdkms"; pause' &
+ 1271  ./devops_solution_Manideep_Gillela.sh 
+ 1272  vim devops_solution_Manideep_Gillela.sh 
+ 1273  ./devops_solution_Manideep_Gillela.sh 
+ 1274  vim devops_solution_Manideep_Gillela.sh 
+ 1275  ./devops_solution_Manideep_Gillela.sh 
+ 1276  vim devops_solution_Manideep_Gillela.sh 
+ 1277  ./devops_solution_Manideep_Gillela.sh 
+ 1278  vim devops_solution_Manideep_Gillela.sh 
+ 1279  ./devops_solution_Manideep_Gillela.sh 
+ 1280  vim devops_solution_Manideep_Gillela.sh 
+ 1281  ./devops_solution_Manideep_Gillela.sh 
+ 1282  vim devops_solution_Manideep_Gillela.sh 
+ 1283  ./devops_solution_Manideep_Gillela.sh 
+ 1284  vim devops_solution_Manideep_Gillela.sh 
+ 1285  ls
+ 1286  cp devops_* ~/Documents/
+ 1287  vim devops_Manideep_Gillela_solution.tf 
+ 1288  cd ~/Documents/
+ 1289  mv devops_Manideep_Gillela_solution.tf devops_Manideep_Gillela_solution.txt
+ 1290  mv devops_solution_Manideep_Gillela.sh devops_solution_Manideep_Gillela.txt
+ 1291  vim devops_Manideep_Gillela_solution.txt 
+ 1292  vim devops_solution_Manideep_Gillela.txt 
+ 1293  vim devops_Manideep_Gillela_solution.txt 
+ 1294  cd 
+ 1295  cd tasks/
+ 1296  vim devops_solution_Manideep_Gillela.sh 
+ 1297  vim devops_Manideep_Gillela_solution.tf 
+ 1298  terraform plan
+ 1299  terraform apply
+ 1300  terraform destroy
+ 1301  vim devops_Manideep_Gillela_solution.tf 
+ 1302  terraform apply
+ 1303  vim devops_Manideep_Gillela_solution.tf 
+ 1304  terraform apply
+ 1305  vim devops_solution_Manideep_Gillela.sh 
+ 1306  ./devops_solution_Manideep_Gillela.sh 
+ 1307  vim devops_solution_Manideep_Gillela.sh 
+ 1308  cd tasks/
+ 1309  ls
+ 1310  vim test.sh 
+ 1311  ./test.sh 
+ 1312  vim test.sh 
+ 1313  ./test.sh 
+ 1314  vim test.sh 
+ 1315  ls -l | grep key
+ 1316  ssh -i "Mynewkey.pem" ubuntu@ec2-34-207-177-173.compute-1.amazonaws.com
+ 1317  ssh -i "Mynewkey.pem" ubuntu@ec2-54-89-77-131.compute-1.amazonaws.com
+ 1318  ssh -i "Mynewkey.pem" ubuntu@ec2-54-167-238-108.compute-1.amazonaws.com
+ 1319  kubectl version
+ 1320  aws-iam-authenticator  help
+ 1321  kubectl get nodes
+ 1322  ps
+ 1323  ps -aux
+ 1324  ps -aux | grep print
+ 1325  kill 47444
+ 1326  kill 3948
+ 1327  kill 3759
+ 1328  ps -pid | grep print
+ 1329  PID
+ 1330  ps aux | grep -i print
+ 1331  kill 163556
+ 1332  kill 14352
+ 1333  ps -ax | grep print
+ 1334  kill 3442
+ 1335  sudo kill 3442
+ 1336  ps -ax | grep print
+ 1337  sudo kill 3877
+ 1338  ps -ax | grep print
+ 1339  sudo kill 8499
+ 1340  ps -ax | grep print
+ 1341  s
+ 1342  ps -ax | grep print
+ 1343  ls
+ 1344  cd go/
+ 1345  l
+ 1346  ls
+ 1347  cd ..
+ 1348  ls
+ 1349  pwd
+ 1350  cd aws
+ 1351  ls
+ 1352  cd ..
+ 1353  git clone https://github.com/wardviaene/terraform-course
+ 1354  ls
+ 1355  cd terraform-course/
+ 1356  ls
+ 1357  cd first-steps/
+ 1358  ls
+ 1359  cat instance.tf 
+ 1360  vim instance.tf 
+ 1361  terraform init
+ 1362  terraform run
+ 1363  terraform plan
+ 1364  terraform  apply
+ 1365  terraform destroy
+ 1366  cat instance.tf cd ..
+ 1367  cd ..
+ 1368  ls
+ 1369  cd demo-1
+ 1370  ls
+ 1371  cat instance.tf 
+ 1372  cat provider.tf 
+ 1373  cat vars.tf 
+ 1374  cat provider.tf 
+ 1375  vim provider.tf 
+ 1376  vim vars.tf 
+ 1377  vim provider.tf 
+ 1378  vim vars.tf 
+ 1379  vim instance.tf 
+ 1380  terraform plam
+ 1381  terraform plan
+ 1382  terraform init
+ 1383  terraform plan
+ 1384  vim provider.tf 
+ 1385  vim instance.tf 
+ 1386  vim vars.tf 
+ 1387  terraform plan
+ 1388  ls
+ 1389  rm terraform.tfstate 
+ 1390  terraform plan
+ 1391  cd ..
+ 1392  cd demo-2
+ 1393  ls
+ 1394  clear
+ 1395  ls
+ 1396  ssh-keygen -f mykey
+ 1397  ls
+ 1398  cat instance.tf 
+ 1399  cat vars.tf 
+ 1400  cd ~/Downloads/
+ 1401  cd code_20190115/
+ 1402  ls
+ 1403  cd code/
+ 1404  ls
+ 1405  cd cloudformation/
+ 1406  ls
+ 1407  cd ..
+ 1408  cd
+ 1409  ls
+ 1410  cd terraform-course/
+ 1411  ls
+ 1412  cd demo-3/
+ 1413  ls
+ 1414  cat instance.tf 
+ 1415  cat provider.tf 
+ 1416  cat vars.tf 
+ 1417  vim vars.tf 
+ 1418  vim instance.tf 
+ 1419  vim provider.tf 
+ 1420  terraform plan
+ 1421  terraform init
+ 1422  terraform apply
+ 1423  terraform destroy
+ 1424  ls
+ 1425  cat private_ips.txt 
+ 1426  ls
+ 1427  vim instance.tf 
+ 1428  ls -al
+ 1429  man ls
+ 1430  ls
+ 1431  cd..
+ 1432  cd ..
+ 1433  ls
+ 1434  clear
+ 1435  cat ~/.aws/credentials 
+ 1436  cd demo-4/
+ 1437  ls
+ 1438  vim backend.tf
+ 1439  ls
+ 1440  vim instance.tf 
+ 1441  vim backend.tf
+ 1442  terraform fmt
+ 1443  vim backend.tf 
+ 1444  terraform init
+ 1445  vim instance.tf 
+ 1446  vim provider.tf 
+ 1447  terraform vars.tf 
+ 1448  vim vars.tf 
+ 1449  terraform init
+ 1450  vim backend.tf 
+ 1451  vim vars.tf 
+ 1452  vim provider.tf 
+ 1453  vim instance.tf 
+ 1454  terraform init
+ 1455  vim backend.tf 
+ 1456  terraform init
+ 1457  vim backend.tf 
+ 1458  terraform init
+ 1459  terraform plan
+ 1460  terraform apply
+ 1461  terraform destroy
+ 1462  cd .
+ 1463  cd ..
+ 1464  cd demo-5/
+ 1465  ls
+ 1466  cat provider.tf 
+ 1467  cat vars.tf 
+ 1468  cat securitygroup.tf 
+ 1469  cd ..
+ 1470  cd demo-6/
+ 1471  ls
+ 1472  cat modules.tf 
+ 1473  cd ..
+ 1474  cd  demo-9/
+ 1475  ls
+ 1476  terraform show
+ 1477  vim vars.tf 
+ 1478  ls | grep key
+ 1479  ssh -i "Mynewkey.pem" ec2-user@ec2-35-175-138-194.compute-1.amazonaws.com
+ 1480  ssh -i "Mynewkey.pem" ec2-user@ec2-18-209-168-158.compute-1.amazonaws.com
+ 1481  ssh -i "Mynewkey.pem" ec2-user@ec2-3-85-171-11.compute-1.amazonaws.com
+ 1482  aws ec2 run-instances --instance-type t2.micro --image-id ami-0b898040803850657 --count 21
+ 1483  cd terraform-course/
+ 1484  ls
+ 1485  cd demo7
+ 1486  cd demo-7/
+ 1487  ls
+ 1488  cat vpc.tf 
+ 1489  vim vpc
+ 1490  vim vpc.tf 
+ 1491  vim nat.tf 
+ 1492  ls
+ 1493  cd ..
+ 1494  ls
+ 1495  cd demo-8/
+ 1496  ssh-keygen -f mykey
+ 1497  ls
+ 1498  vim instance.tf 
+ 1499  vim vars.tf 
+ 1500  ls
+ 1501  vim instance.tf 
+ 1502  terraform plan
+ 1503  terraform init
+ 1504  terraform plan
+ 1505  terraform apply
+ 1506  vim terraform.tfstate 
+ 1507  terraform destroy
+ 1508  man fstab
+ 1509  cd ..
+ 1510  cd demo-9/
+ 1511  cd ..
+ 1512  cd demo2
+ 1513  cd demo-2
+ 1514  ls
+ 1515  vim instance.tf 
+ 1516  vim provider.tf 
+ 1517  vim vars.tf 
+ 1518  cd ..
+ 1519  cd demo-1
+ 1520  ls
+ 1521  vim instance.tf 
+ 1522  vim vars.tf 
+ 1523  cd ..
+ 1524  cd demo-3/
+ 1525  ls
+ 1526  vim instance.tf 
+ 1527  cd ..
+ 1528  cd demo-9/
+ 1529  ls
+ 1530  vim instance.tf 
+ 1531  terraform init
+ 1532  terraform plan
+ 1533  ls
+ 1534  ssh-keygen -f mykey
+ 1535  terraform plan
+ 1536  terraform apply
+ 1537  cat instance.tf 
+ 1538  ssh -i mykey -l ubuntu 34.245.208.47
+ 1539  terraform destroy
+ 1540  cd ..
+ 1541  cd demo-10/
+ 1542  ls
+ 1543  cat instance.tf 
+ 1544  terraform destroy
+ 1545  cd Github_Rep/
+ 1546  ls
+ 1547  cd Portfolio-Website/
+ 1548  ls
+ 1549  vim index.html 
+ 1550  git add -A
+ 1551  git commit -am 'edit index.html'
+ 1552  git push origin master 
+ 1553  aws --help
+ 1554  aws s3 rm s3://www.manideepreddy.com/index.html
+ 1555  ls
+ 1556  aws s3 cp index.html s3://www.manideepreddy.com/
+ 1557  aws cloudfront create-invalidation --distribution-id E7S0TZ2845OYU
+ 1558  aws cloudfront create-invalidation --E7S0TZ2845OYU
+ 1559  aws cloudfront create-invalidation --distribution-id E7S0TZ2845OYU
+ 1560  aws cloudfront create-invalidation --distribution-id E7S0TZ2845OYU --paths "/*"
+ 1561  vim index.html 
+ 1562  git add -A
+ 1563  git commit -am 'edit index.html'
+ 1564  git push origin master 
+ 1565  aws s3 rm s3://www.manideepreddy.com/index.html
+ 1566  aws s3 cp index.html s3://www.manideepreddy.com/
+ 1567  aws cloudfront create-invalidation --distribution-id E7S0TZ2845OYU --paths "/*"
+ 1568  vim index.html 
+ 1569  aws cloudfront create-invalidation --distribution-id E7S0TZ2845OYU --paths "*"
+ 1570  aws cloudfront create-invalidation --distribution-id E7S0TZ2845OYU --paths "/*"
+ 1571  vim ~/.vimrc 
+ 1572  ls
+ 1573  cd /home/
+ 1574  ls
+ 1575  cd manideep/
+ 1576  ls
+ 1577  pwd ~/.vim.rc
+ 1578  pwd
+ 1579  cd ..
+ 1580  ls
+ 1581  cd linuxbrew/
+ 1582  ls
+ 1583  cd ..
+ 1584  rm -rf linuxbrew/
+ 1585  cd rm -rf linuxbrew/
+ 1586  cd
+ 1587  cd /home/
+ 1588  ls
+ 1589  cd manideep/
+ 1590  ls env-setup/
+ 1591  cd ...
+ 1592  ls vim
+ 1593  man ls
+ 1594  ls -R .vim.rc
+ 1595  ls -R vim.rc
+ 1596  ls -R .vimrc
+ 1597  man ls
+ 1598  man locate
+ 1599  pw
+ 1600  pwd
+ 1601  ls | grep vim
+ 1602  ls
+ 1603  ls -a
+ 1604  ls -a | grep vim
+ 1605  cd Github_Rep/
+ 1606  ls
+ 1607  git --help
+ 1608  ls
+ 1609  mkdir MoveDataS3
+ 1610  cd MoveDataS3/
+ 1611  git init
+ 1612  vim ReadMe.txt
+ 1613  git commit -am 'created new repo'
+ 1614  git add -A
+ 1615  git commit -am 'created new repo'
+ 1616  git remote add origin git@github.com:manideep1116/MoveDataS3.git
+ 1617  curl -u manideep1116:Verna0509$  https://api.github.com/user/repos -d '{"name":"MoveDataS3"}'
+ 1618  cd ..
+ 1619  ls
+ 1620  rm myfile1 
+ 1621  vim Create_Repo.txt
+ 1622  cd MoveDataS3/
+ 1623  vim README.md
+ 1624  ls
+ 1625  mv ReadMe.txt README.md
+ 1626  ls
+ 1627  git add -A
+ 1628  git commit -am 'First commit'
+ 1629  git push origin master
+ 1630  git push -u origin master
+ 1631  git --help
+ 1632  git push --help
+ 1633  ls
+ 1634  vim Lambda1.py
+ 1635  cd
+ 1636  aws s3 --help
+ 1637  aws  --help
+ 1638  aws --version
+ 1639  aws describe ec
+ 1640  aws describe 
+ 1641  aws describe s3
+ 1642  aws s3
+ 1643  aws s3 help
+ 1644  aws s3api help
+ 1645  aws s3api create-bucket --bucket src1B --region us-east-1
+ 1646  aws s3api create-bucket --bucket src1Buc --region us-east-1
+ 1647  aws s3api create-bucket --bucket src1buc --region us-east-1
+ 1648  aws s3api create-bucket --bucket destbuc --region us-east-1
+ 1649  aws s3api create-bucket --bucket destbuc
+ 1650  aws s3api create-bucket --bucket destinbuc --region us-east-1
+ 1651  aws s3 help
+ 1652  aws s3 ls
+ 1653  ls
+ 1654  vim xaa
+ 1655  vim sorted.txt 
+ 1656  for key in s3.list_objects(Bucket=bucket_to_copy)['Contents']:
+ 1657  aws s3 cp sorted.txt untitled.txt s3://src1buc/
+ 1658  aws s3 cp sorted.txt s3://src1buc/
+ 1659  aws s3 cp untitled.txt s3://src1buc/
+ 1660  aws s3 ls s3://src1buc/
+ 1661  ls
+ 1662  cat foo.txt
+ 1663  aws s3 cp foo.txt s3://src1buc/
+ 1664  pwd
+ 1665  cd Github_Rep/
+ 1666  ls
+ 1667  git clone https://github.com/aws-samples/aws-modern-application-workshop.git
+ 1668  ls
+ 1669  cd aws-modern-application-workshop/
+ 1670  ls
+ 1671  clear
+ 1672  ls
+ 1673  ls -a
+ 1674  cd ..
+ 1675  rm -Rf aws-modern-application-workshop/
+ 1676  ls | grep aws
+ 1677  ls
+ 1678  clea
+ 1679  clear
+ 1680  cd
+ 1681  c Downloads/
+ 1682  cd Downloads/
+ 1683  ls
+ 1684  cd aws-modern-application-workshop-python/
+ 1685  clear
+ 1686  ls
+ 1687  cd module-1
+ 1688  ls
+ 1689  aws --version
+ 1690  aws configure
+ 1691  clear
+ 1692  l
+ 1693  ls
+ 1694  vim xin
+ 1695  cd
+ 1696  ls
+ 1697  cd Downloads/
+ 1698  ls | grep index.html
+ 1699  vim index.html
+ 1700  mkdir ~/home/manideep/webappProject
+ 1701  mkdir ~/webappProject
+ 1702  mv index.html error.html ~/webappProject/
+ 1703  cd ~/webappProject/
+ 1704  pwd
+ 1705  ls
+ 1706  mkdir static
+ 1707  mv index.html error.html /static/
+ 1708  mv index.html error.html ~/static/
+ 1709  mv index.html error.html ~/webappProject/static/
+ 1710  ls
+ 1711  cd static/
+ 1712  ls
+ 1713  vim app.py
+ 1714  python app.py 
+ 1715  vim app.py
+ 1716  python app.py 
+ 1717  vim app.py
+ 1718  python app.py 
+ 1719  pip install flask
+ 1720  python app.py 
+ 1721  vim app.py
+ 1722  python app.py 
+ 1723  vim app.py
+ 1724  python app.py 
+ 1725  vim app.py
+ 1726  python app.py 
+ 1727  cd webappProject/
+ 1728  ls
+ 1729  cd static/
+ 1730  ls
+ 1731  vim index.html 
+ 1732  firefox index.html 
+ 1733  vim index.html 
+ 1734  clear
+ 1735  cd webappProject/static/
+ 1736  vim app.py 
+ 1737  python app.py 
+ 1738  pip install -U flask-cors
+ 1739  vim app.py 
+ 1740  python app.py 
+ 1741  vim app.py 
+ 1742  python app.py 
+ 1743  vim app.py 
+ 1744  python app.py 
+ 1745  vimi app.py 
+ 1746  vim app.py 
+ 1747  python app.py 
+ 1748  ls
+ 1749  clear
+ 1750  vim app.py 
+ 1751  vim fullstack.html 
+ 1752  vim app.py 
+ 1753  python app.py 
+ 1754  vim app.py 
+ 1755  python app.py 
+ 1756  vim app.py 
+ 1757  vim fullstack.html 
+ 1758  vim app.py 
+ 1759  python app.py 
+ 1760  vim app.py 
+ 1761  python app.py 
+ 1762  vim app.py 
+ 1763  python app.py 
+ 1764  vim app.py 
+ 1765  python app.py 
+ 1766  clear
+ 1767  vim 
+ 1768  vim README.md 
+ 1769  aws cloudformation describe-stacks --stack-name serverlessCoreStack > ~/environment/cloudformation-core-output.json
+ 1770  aws cloudformation describe-stacks --stack-name serverlessCoreStack
+ 1771  aws cloudformation describe-stacks --stack-name serverlessCoreStack > ~/Github_Rep/serverless/cloudformation-core-output.json
+ 1772  aws cloudformation describe-stacks --stack-name serverlessCoreStack > ~/Github_Rep/serverless_web_application/cloudformation-core-output.json
+ 1773  ls
+ 1774  cat cloudformation-core-output.json 
+ 1775  cd ~/Downloads/aws-modern-application-workshop-python/module-2/app/
+ 1776  l
+ 1777  ls
+ 1778  vim Dockerfile 
+ 1779  ls
+ 1780  cd service/
+ 1781  ls
+ 1782  vim mysfits-response.json 
+ 1783  vim requirements.txt 
+ 1784  vim mythicalMysfitsService.py 
+ 1785  ls
+ 1786  rm my*
+ 1787  ls
+ 1788  cd ..
+ 1789  ls
+ 1790  vim buildspec.yml 
+ 1791  mv Dockerfile service/ ~/Github_Rep/serverless_web_application/
+ 1792  cd ~/Github_Rep/serverless_web_application/
+ 1793  ls
+ 1794  clear
+ 1795  ls
+ 1796  vim Dockerfile 
+ 1797  docker build . -t 214964586521.dkr.ecr.us-east-1.amazonaws.com/serverless/service:latest
+ 1798  sudo apt install docker.io
+ 1799  sudo apt-get update
+ 1800  sudo apt install docker.io
+ 1801  sudo apt-get install Docker
+ 1802  lsb_release -a
+ 1803  sudo apt install -y apt-transport-https ca-certificates curl      software-properties-common
+ 1804  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+ 1805  sudo add-apt-repository      "deb https://download.docker.com/linux/ubuntu zesty stable"
+ 1806  sudo apt update -y
+ 1807  sudo apt install -y docker-ce
+ 1808  docker run hello-world
+ 1809  sudo apt-get update
+ 1810  sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+ 1811  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+ 1812  sudo apt-key fingerprint 0EBFCD88
+ 1813  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu zesty stable"
+ 1814  sudo apt-get update
+ 1815  sudo apt-get install docker-ce
+ 1816  sudo emacs /etc/apt/sources.list
+ 1817  cd Downloads/
+ 1818  mv fullstack.html ~/webappProject/static/
+ 1819  cd
+ 1820  cd webappProject/static/
+ 1821  ls
+ 1822  rm fullstack.html 
+ 1823  rm error.html 
+ 1824  ls
+ 1825  cd ..
+ 1826  mkdir s3
+ 1827  cd s3
+ 1828  vim bucket-policy.json
+ 1829  ls
+ 1830  cd..
+ 1831  cd ../..
+ 1832  ls
+ 1833  mv webappProject/ Github_Rep/
+ 1834  cd Github_Rep/
+ 1835  cd webappProject/
+ 1836  git init
+ 1837  ls
+ 1838  git add .
+ 1839  git commit -am "First Commit"
+ 1840  git remote add origin git@github.com:manideep1116/serverless_webapp
+ 1841  cd ..
+ 1842  mv webappProject/ serverless_webapp
+ 1843  ls
+ 1844  cd serverless_webapp/
+ 1845  ls
+ 1846  cd ..
+ 1847  git remote add origin@github.com:manideep1116/serverless_webapp
+ 1848  git remote add origin @github.com:manideep1116/serverless_webapp
+ 1849  git remote rm origin@github.com:manideep1116/serverless_webapp
+ 1850  git remote rm origin@github.com:manideep1116/webappproject
+ 1851  git remote rm origin@github.com:manideep1116/webappProject
+ 1852  git remote add origin @github.com:manideep1116/serverless_webapp
+ 1853  git push -u origin master
+ 1854  cd serverless_webapp/
+ 1855  git remote add origin @github.com:manideep1116/serverless_webapp
+ 1856  git push -u origin master
+ 1857  git remote add origin @github.com:manideep1116/serverless_webapp
+ 1858  git push -u origin master
+ 1859  sudo git push -u origin master
+ 1860  cd ..
+ 1861  git clone https://github.com/manideep1116/serverless_web_application.git
+ 1862  cd serverless_webapp/
+ 1863  mv * ~/Github_Rep/serverless_web_application/
+ 1864  ls
+ 1865  cd ..
+ 1866  rm serverless_webapp/
+ 1867  rm -rf serverless_webapp/
+ 1868  ls
+ 1869  cd serverless_web_application/
+ 1870  ls
+ 1871  git add .
+ 1872  git commit -am "add inital files"
+ 1873  git push origin master
+ 1874  ls
+ 1875  clear
+ 1876  cd static/
+ 1877  clea
+ 1878  clear
+ 1879  ls
+ 1880  cd ..
+ 1881  cd s3
+ 1882  vim bucket-policy.json 
+ 1883  aws --verion
+ 1884  aws --version
+ 1885  clear
+ 1886  aws s3 mb s3://webapp
+ 1887  aws s3 mb s3://serverlesswebapp
+ 1888  aws s3 mb s3://serverlessebapp
+ 1889  s3 rb serverlessebapp
+ 1890  aws s3 rb serverlessebapp
+ 1891  aws s3 rb s3://serverlessebapp
+ 1892  aws s3 mb s3://serverlessWebapp
+ 1893  aws s3 mb s3://Proj_webapp
+ 1894  aws s3 mb s3://serverlessProj_webapp
+ 1895  aws s3 mb s3://serverlessproj
+ 1896  aws s3 mb s3://serverless00
+ 1897  clear
+ 1898  cd ..
+ 1899  cd static/
+ 1900  aws s3 website s3://serverless00 --index-document index.html
+ 1901  aws s3api put-bucket-policy --bucket serverless00 --policy file://~/Github_rep/serverless_web_application/s3/bucket-policy.json
+ 1902  aws s3api put-bucket-policy --bucket serverless00 --policy file://~/Github_Rep/serverless_web_application/s3/bucket-policy.json
+ 1903  cd ..
+ 1904  cd s3/
+ 1905  vim bucket-policy.json 
+ 1906  aws s3api put-bucket-policy --bucket serverless00 --policy file://~/Github_Rep/serverless_web_application/s3/bucket-policy.json
+ 1907  aws s3 mb s3://serverless00
+ 1908  cd ..
+ 1909  cd static/
+ 1910  aws s3 cp index.html s3://serverless00/index.html
+ 1911  clear
+ 1912  vim index.html 
+ 1913  aws s3 rm s3://serverless00/index.html
+ 1914  aws s3 cp index.html s3://serverless00/index.html
+ 1915  cd
+ 1916  cd Downloads/aws-modern-application-workshop-python/
+ 1917  cd module-2/
+ 1918  cd cfn/
+ 1919  ls
+ 1920  mv core.yml ~/Github_Rep/serverless_web_application/
+ 1921  cd ~/Github_Rep/serverless_web_application/
+ 1922  ls
+ 1923  vim core.yml 
+ 1924  aws cloudformation create-stack --stack-name serverlessCoreStack --capabilities CAPABILITY_NAMED_IAM --template-body file://~/Github_Rep/serverless_web_application/module-2/cfn/core.yml   
+ 1925  aws cloudformation create-stack --stack-name serverlessCoreStack --capabilities CAPABILITY_NAMED_IAM --template-body file://~/Github_Rep/serverless_web_application/core.yml   
+ 1926  ls
+ 1927  vim cloudformation-core-output.json 
+ 1928  sudo vim /etc/apt/sources.list
+ 1929  sudo apt-get update && sudo apt-get install docker-ce
+ 1930  sudo vim /etc/apt/sources.list
+ 1931  sudo apt-get update && sudo apt-get install docker-ce
+ 1932  sudo vim /etc/apt/sources.list
+ 1933  ls
+ 1934  vim Dockerfile 
+ 1935  vim app.py
+ 1936  ls
+ 1937  cd static/
+ 1938  ls
+ 1939  mv app.py ../
+ 1940  ls
+ 1941  cd ..
+ 1942  ls
+ 1943  vim app.py 
+ 1944  clear
+ 1945  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+ 1946  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+ 1947  sudo apt-get update
+ 1948  apt-cache policy docker-ce
+ 1949  sudo systemctl status docker
+ 1950  cd ..
+ 1951  scp -i ~/Mynewkey.pem /home/manideep/Github_Rep/serverless_web_application/  ubuntu@ec2-54-86-122-35.compute-1.amazonaws.com~/data/
+ 1952  scp -i ~/Mynewkey.pem /home/manideep/Github_Rep/serverless_web_application  ubuntu@ec2-54-86-122-35.compute-1.amazonaws.com~/data/
+ 1953  scp -ir ~/Mynewkey.pem /home/manideep/Github_Rep/serverless_web_application  ubuntu@ec2-54-86-122-35.compute-1.amazonaws.com~/data/
+ 1954  cd
+ 1955  pwd
+ 1956  cd Github_Rep/
+ 1957  scp -ir /home/manideep/Mynewkey.pem /home/manideep/Github_Rep/serverless_web_application  ubuntu@ec2-54-86-122-35.compute-1.amazonaws.com~/data/
+ 1958  scp -ir /home/manideep/Mynewkey.pem /home/manideep/Github_Rep/serverless_web_application  ubuntu@ec2-54-86-122-35.compute-1.amazonaws.com:~/data/
+ 1959  scp -i /home/manideep/Mynewkey.pem /home/manideep/Github_Rep/serverless_web_application  ubuntu@ec2-54-86-122-35.compute-1.amazonaws.com:~/data/
+ 1960  scp -i /home/manideep/Mynewkey.pem /home/manideep/Github_Rep/serverless_web_application/Dockerfile   ubuntu@ec2-54-86-122-35.compute-1.amazonaws.com:~/data/
+ 1961  scp -i /home/manideep/Mynewkey.pem /home/manideep/Github_Rep/serverless_web_application/app.py    ubuntu@ec2-54-86-122-35.compute-1.amazonaws.com:~/data/
+ 1962  scp -i /home/manideep/Mynewkey.pem /home/manideep/Github_Rep/serverless_web_application/service/    ubuntu@ec2-54-86-122-35.compute-1.amazonaws.com:~/data/
+ 1963  scp -i /home/manideep/Mynewkey.pem /home/manideep/Github_Rep/serverless_web_application/service/requirements.txt     ubuntu@ec2-54-86-122-35.compute-1.amazonaws.com:~/data/
+ 1964  cd serverless_web_application/
+ 1965  cd service/
+ 1966  ls
+ 1967  cd..
+ 1968  ls
+ 1969  cd ..
+ 1970  ls
+ 1971  vim cloudformation-core-output.json 
+ 1972  cd 
+ 1973  cd Downloads/aws-modern-application-workshop-python/
+ 1974  ls
+ 1975  cd module-2/
+ 1976  ls
+ 1977  cd app/
+ 1978  ls
+ 1979  cd ..
+ 1980  ls
+ 1981  cd web/
+ 1982  ls
+ 1983  cd ..
+ 1984  ls
+ 1985  cd aws-cli/
+ 1986  ls
+ 1987  cd ..
+ 1988  ls
+ 1989  cd  ..
+ 1990  ls
+ 1991  cd module-1/
+ 1992  ls
+ 1993  cd ..
+ 1994  ls
+ 1995  cd Github_Rep/
+ 1996  cd serverless_web_application/
+ 1997  ls
+ 1998  vim cloudformation-core-output.json 
+ 1999  cd ~/Downloads/aws-modern-application-workshop-python/
+ 2000  ls
+ 2001  cd module-1/
+ 2002  ls
+ 2003  cd ..
+ 2004  ls
+ 2005  vim module-1/
+ 2006  cd ~/Github_Rep/serverless_web_application/
+ 2007  ls
+ 2008  vim core.yml 
+ 2009  vim cloudformation-core-output.json 
+ 2010  ls
+ 2011  vim target-group-output.json 
+ 2012  ls
+ 2013  vim nlb-output.json 
+ 2014  cp ~/Downloads/aws-modern-application-workshop/module-2/aws-cli/service-definition.json .
+ 2015  cd ~/Downloads/aws-modern-application-workshop/module-2/aws-cli/
+ 2016  ls
+ 2017  cd ~/Downloads/aws-modern-application-workshop/module-2/
+ 2018  cd ~/Downloads/aws-modern-application-workshop/
+ 2019  cp ~/Downloads/aws-modern-application-workshop-python/module-2/aws-cli/service-definition.json .
+ 2020  ls
+ 2021  vim service
+ 2022  vim service-definition.json 
+ 2023  vim cloudformation-core-output.json 
+ 2024  vim nlb-output.json 
+ 2025  vim target-group-output.json 
+ 2026  ls
+ 2027  vim task-definition.json 
+ 2028* 
+ 2029  vim task-definition.json 
+ 2030  vim service
+ 2031  vim service-definition.json 
+ 2032  history > save_commands.txt

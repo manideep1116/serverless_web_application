@@ -36,7 +36,7 @@
       </div>
 
       <div class="third">
-        <h2><u>Cloud Engineerr</u></h2>
+        <h2><u>Cloud Engineer</u></h2>
         <p>For developers who are comfortable enabling and expanding Cloud adoption and proficiency via automation and best practices.</p>
         <button class= "button" id="ce">know more!</button>
         <p id= "data"></p>
@@ -56,7 +56,7 @@
 
 
     function fsd(){
-      fetch('http://127.0.0.1:5000/fullstack')
+      fetch('http://serverless-nlb-385f3e6347d1e2cc.elb.us-east-1.amazonaws.com/fullstack')
         .then(function(res){
           return res.text();
         })
@@ -67,7 +67,7 @@
     }   
 
    function bde(){
-      fetch('http://127.0.0.1:5000/bigdata')
+      fetch('http://serverless-nlb-385f3e6347d1e2cc.elb.us-east-1.amazonaws.com/bigdata')
         .then(function(res){
           return res.text();
         })
@@ -78,7 +78,7 @@
     }   
 
    function ce(){
-      fetch('http://127.0.0.1:5000/cloudeng')
+      fetch('http://serverless-nlb-385f3e6347d1e2cc.elb.us-east-1.amazonaws.com/cloudeng')
         .then(function(res){
           return res.text();
         })

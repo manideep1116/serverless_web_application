@@ -1,0 +1,8 @@
+{
+    "status": "PENDING", 
+    "targetArns": [
+        "arn:aws:elasticloadbalancing:us-east-1:214964586521:loadbalancer/net/serverless-nlb/385f3e6347d1e2cc"
+    ], 
+    "id": "wsg16t", 
+    "name": "serverless"
+}

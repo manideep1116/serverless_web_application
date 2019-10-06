@@ -1,0 +1,30 @@
+{
+  "serviceName": "serverlesswebapp-Service",
+  "cluster":"serverlesswebapp-Cluster",
+  "launchType": "FARGATE",
+  "deploymentConfiguration": {
+    "maximumPercent": 200,
+    "minimumHealthyPercent": 0
+  },
+  "desiredCount": 1,
+  "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "assignPublicIp": "DISABLED",
+      "securityGroups": [
+        "sg-0ca6bc7dfb97357a8"
+      ],
+      "subnets": [
+        "subnet-0d9090385a4117c88",
+        "subnet-0fa20d18bb50486bd"
+      ]
+    }
+  },
+  "taskDefinition": "serverless-webapp",
+  "loadBalancers": [
+    {
+      "containerName": "serverlesswebapp-Service",
+      "containerPort": 8080,
+      "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:214964586521:targetgroup/serverless-TargetGroup/7d6d692061df8147"
+    }
+  ]
+}
