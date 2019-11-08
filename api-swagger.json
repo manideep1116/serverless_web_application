@@ -17,6 +17,7 @@
             }
         }
     },
+    "paths": {
         "/fullstack": {
             "get": {
                 "responses": {
@@ -37,7 +38,7 @@
                 },
                 "x-amazon-apigateway-integration": {
                     "connectionType": "VPC_LINK",
-                    "connectionId": "wsg16t",
+                    "connectionId": "ho6cdg",
                     "httpMethod": "GET",
                     "type": "HTTP_PROXY",
                     "uri": "http://serverless-nlb-385f3e6347d1e2cc.elb.us-east-1.amazonaws.com/fullstack",
@@ -60,7 +61,7 @@
                     "application/json"
                 ],
                 "produces": [
-                    "application/json"
+                    "text/plain charset=utf-8n"
                 ],
                 "tags": [
                     "CORS"
@@ -122,7 +123,7 @@
                 },
                 "x-amazon-apigateway-integration": {
                     "connectionType": "VPC_LINK",
-                    "connectionId": "wsg16t",
+                    "connectionId": "ho6cdg",
                     "httpMethod": "GET",
                     "type": "HTTP_PROXY",
                     "uri": "http://serverless-nlb-385f3e6347d1e2cc.elb.us-east-1.amazonaws.com/bigdata",
@@ -145,7 +146,7 @@
                     "application/json"
                 ],
                 "produces": [
-                    "application/json"
+                    "text/plain charset=utf-8"
                 ],
                 "tags": [
                     "CORS"
@@ -207,7 +208,7 @@
                 },
                 "x-amazon-apigateway-integration": {
                     "connectionType": "VPC_LINK",
-                    "connectionId": "wsg16t",
+                    "connectionId": "ho6cdg",
                     "httpMethod": "GET",
                     "type": "HTTP_PROXY",
                     "uri": "http://serverless-nlb-385f3e6347d1e2cc.elb.us-east-1.amazonaws.com/cloudeng",
@@ -230,7 +231,7 @@
                     "application/json"
                 ],
                 "produces": [
-                    "application/json"
+                    "text/plain charset=utf-8"
                 ],
                 "tags": [
                     "CORS"
@@ -271,4 +272,4 @@
                     }
                 }
             }
-        }
+        }}

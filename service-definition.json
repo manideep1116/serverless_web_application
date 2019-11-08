@@ -1,6 +1,6 @@
 {
   "serviceName": "serverlesswebapp-Service",
-  "cluster":"serverlesswebapp-Cluster",
+  "cluster":"serverless-webapp",
   "launchType": "FARGATE",
   "deploymentConfiguration": {
     "maximumPercent": 200,
