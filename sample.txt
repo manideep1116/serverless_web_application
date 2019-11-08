@@ -1,4 +1,0 @@
-It's just a sample to test the git pull and git fetch.
-One more cvhamge to check the merge again.
- This line is to check the push and commit.
-This is the 4th line to check the pull command.
