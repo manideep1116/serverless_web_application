@@ -5,9 +5,9 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-#@app.route('/')
-#def index():
-#        return render_template('index.html')
+@app.route('/')
+def index():
+    return 'hello!'
 
 
 @app.route('/fullstack', methods = ['GET'])
@@ -25,7 +25,7 @@ def cloudEng():
 def bigData():
     return "<h3>Job description</h3><p>As a Big Data Engineer, you will develop innovative software using distributed data processing frameworks and techniques. Ocelot Big Data Engineers define and build data pipelines that enable our clients to make faster, better, data-informed business decision. You will work in a team environment with software engineers, analysts, and data scientists with the opportunity to mentor colleagues on your team and across other engineering teams.</p>"
 
-if __name__ == "__main__": 
+if __name__ == "__main__":
      app.run(host="0.0.0.0", port=8080)
 
 app.run()

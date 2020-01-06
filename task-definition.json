@@ -6,12 +6,12 @@
   "requiresCompatibilities": [
     "FARGATE"
   ],
-  "executionRoleArn": "arn:aws:iam::214964586521:role/serverlessCoreStack-EcsServiceRole-AYPTKR1QXUZ0",
-  "taskRoleArn": "arn:aws:iam::214964586521:role/serverlessCoreStack-ECSTaskRole-1QZCJ8NUCJ131",
+  "executionRoleArn": "Replace arn of service role",
+  "taskRoleArn": "Replace arn of task role",
   "containerDefinitions": [
     {
       "name": "serverlesswebapp-Service",
-      "image": "214964586521.dkr.ecr.us-east-1.amazonaws.com/serverlesswebapp/service:latest",
+      "image": " Replace Image tag 23******.dkr.ecr.us-east-1.amazonaws.com/serverless/service:latest",
       "portMappings": [
         {
           "containerPort": 8080,

@@ -1,13 +1,15 @@
 {
-    "Id": "MyPolicy",
-    "Statement": [
-        {
-            "Action": "s3:GetObject",
-            "Effect": "Allow",
-            "Principal": "*",
-            "Resource": "arn:aws:s3:::serverless00/*",
-            "Sid": "PublicReadForGetBucketObjects"
-        }
-    ],
-    "Version": "2012-10-17"
+  "Id": "Policy",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadForGetBucketObjects",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::serverless00/*",
+      "Principal": "*"
+    }
+  ]
 }
